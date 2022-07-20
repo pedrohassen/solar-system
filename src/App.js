@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import Title from './components/Header';
-import Solar from './components/SolarSystem';
+import Header from './components/Header';
+import SolarSystem from './components/SolarSystem';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Title />
-        <Solar />
+        <Header />
+        <SolarSystem />
       </div>
     );
   }
