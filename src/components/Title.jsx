@@ -6,7 +6,7 @@ export class Title extends Component {
     return (
       <div>
         <h2>
-          planets
+          Planetas
         </h2>
       </div>
     );
