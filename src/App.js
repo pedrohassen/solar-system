@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Title from './components/Header';
 
-class App extends React.Component {
+class App extends Component {
   render() {
-    //
-    return (<p>Sistema Solar</p>);
+    return (
+      <div>
+        <Title />
+      </div>
+    );
   }
 }
 
