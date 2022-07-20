@@ -3,14 +3,17 @@ import PropTypes from 'prop-types';
 
 export class Title extends Component {
   render() {
+    const { headline } = this.props;
     return (
-      <div>
-        <h2>
-          Planetas
-        </h2>
-      </div>
+      <h2>
+        {headline}
+      </h2>
     );
   }
 }
+
+Title.propTypes = {
+  headline: PropTypes.string.isRequired,
+};
 
 export default Title;

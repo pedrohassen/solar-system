@@ -1,20 +1,14 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import Title from './Title';
+import Title1 from './Title';
 
 export class SolarSystem extends Component {
   render() {
-    const { headlineText } = this.props;
     return (
       <div data-testid="solar-system">
-        <Title headline={ headlineText } />
+        <Title1 />
       </div>
     );
   }
 }
-
-Title.propTypes = {
-  headlineText: PropTypes.string.isRequired,
-};
 
 export default SolarSystem;
