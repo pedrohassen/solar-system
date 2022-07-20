@@ -5,7 +5,7 @@ export class SolarSystem extends Component {
   render() {
     return (
       <div data-testid="solar-system">
-        <Title1 />
+        <Title1 headline="Planetas" />
       </div>
     );
   }
