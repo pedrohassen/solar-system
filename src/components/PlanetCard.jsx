@@ -8,7 +8,7 @@ export class PlanetCard extends Component {
       <div className="planetary-container" data-testid="planet-card">
         <div className="planet-image">
           <img
-            className={ `${planetName}` }
+            className={ `${planetName} planet-spin` }
             src={ planetImage }
             alt={ `Planeta ${planetName}` }
           />

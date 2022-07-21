@@ -34,8 +34,8 @@ body {
 .align-planets {
   align-items: flex-end;
   display: flex;
-  margin-bottom: 30px;
-  padding: 90px;
+  margin-bottom: 10px;
+  padding: 70px;
   width: 90%;
 }
 
@@ -55,9 +55,10 @@ body {
 }
 
 .planetary-container {
+  align-content: flex-end;
   display: flex;
   flex-wrap: wrap;
-  height: 157px;
+  height: 247px;
   justify-content: center;
 }
 
@@ -184,4 +185,24 @@ body {
   height: 66%;
   justify-content: center;
   text-align: left;
+}
+
+@media ( prefers-reduced-motion : no-preference ) {
+
+  .planet-spin:hover {
+    animation: Planets infinite 3s linear;
+  }
+}
+
+@keyframes Planets {
+
+  0% { transform: rotate(0deg) scale(1); }
+
+  25% { transform: rotate(90deg) scale(1.25); }
+
+  50% { transform: rotate(180deg) scale(1.5); }
+
+  75% { transform: rotate(270deg) scale(1.75); }
+
+  100% { transform: rotate(360deg) scale(2); }
 }
