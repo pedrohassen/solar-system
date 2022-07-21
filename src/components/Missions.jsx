@@ -6,15 +6,20 @@ import MissionCard1 from './MissionCard';
 export class Missions extends Component {
   render() {
     return (
-      <div data-testid="missions">
+      <div className="missions-container" data-testid="missions">
         <Title1 headline="Missões" />
-        { missions.map(({ name, year, country, destination }) => (<MissionCard1
-          key={ name }
-          name={ name }
-          year={ year }
-          country={ country }
-          destination={ destination }
-        />))}
+        <div className="full-card">
+          { missions.map(({ name, year, country, destination }) => (
+            <div className="card-text" key={ name }>
+              <MissionCard1
+                name={ name }
+                year={ year }
+                country={ country }
+                destination={ destination }
+              />
+            </div>
+          ))}
+        </div>
       </div>
     );
   }

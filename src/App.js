@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header1 from './components/Header';
 import Missions1 from './components/Missions';
 import SolarSystem1 from './components/SolarSystem';
+import './App.css';
 
 class App extends Component {
   render() {

@@ -5,12 +5,17 @@ export class MissionCard extends Component {
   render() {
     const { name, year, country, destination } = this.props;
     return (
-      <div data-testid="mission-card">
-        <p data-testid="mission-name">{ name }</p>
-        <p data-testid="mission-year">{ year }</p>
-        <p data-testid="mission-country">{ country }</p>
-        <p data-testid="mission-destination">{ destination }</p>
+      <div className="mission-list" data-testid="mission-card">
+        <div className="card-title">
+          <p className="margin-name" data-testid="mission-name">{ name }</p>
+        </div>
+        <div className="card-body">
+          <p data-testid="mission-year">{ year }</p>
+          <p data-testid="mission-country">{ country }</p>
+          <p data-testid="mission-destination">{ destination }</p>
+        </div>
       </div>
+
     );
   }
 }

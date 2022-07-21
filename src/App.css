@@ -1,3 +1,173 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('./images/background.png');
+  color: white;
+}
+
+.h1-container {
+  align-items: center;
+  display: flex;
+  font-size: 80px;
+  height: 150px;
+  justify-content: center;
+  width: 100%;
+}
+
+.planets-container {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 20px;
+  width: 90%;
+}
+
+.align-planets {
+  align-items: flex-end;
+  display: flex;
+  margin-top: 20px;
+  width: 90%;
+}
+
+.planets {
+  align-items: center;
+  background: rgba(24, 26, 37, 0.5);
+  border: 1px solid white;
+  border-radius: 17px;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  left: auto;
+  right: auto;
+  width: 90%;
+}
+
+.planetary-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 157px;
+  justify-content: center;
+}
+
+.planet-image {
+  display: flex;
+}
+
+/* .align-names {
+  display: flex;
+  justify-self: center;
+} */
+
+.planet-names {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Mercúrio {
+  height: 31px;
+  width: 41px;
+}
+
+.Vênus {
+  height: 76px;
+  width: 102px;
+}
+
+.Terra {
+  height: 79px;
+  width: 106px;
+}
+
+.Marte {
+  height: 50px;
+  width: 66px;
+}
+
+.Júpiter {
+  height: 204px;
+  width: 272px;
+}
+
+.Saturno {
+  height: 210.9px;
+  transform: rotate(-16.53deg);
+  width: 282.41px;
+}
+
+.Urano {
+  height: 109px;
+  width: 144px;
+}
+
+.Netuno {
+  height: 107px;
+  width: 144px;
+}
+
+.missions-container {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 20px;
+}
+
+.full-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
   text-align: center;
+  width: 90%;
+}
+
+.card-text {
+  align-items: center;
+  background: rgba(24, 26, 37, 0.5);
+  border: 1px solid white;
+  border-radius: 10px;
+  display: flex;
+  font-size: 12px;
+  margin: 5px;
+  width: 23.5%;
+}
+
+.mission-list {
+  height: 150px;
+  margin-left: 15px;
+  text-align: left;
+  width: 100%;
+}
+
+.card-title {
+  border-bottom: 1px solid white;
+  width: 90%;
+}
+
+.margin-name {
+  align-items: center;
+  display: flex;
+  font-size: 16px;
+  height: 50px;
+  justify-content: left;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  height: 66%;
+  justify-content: center;
+  text-align: left;
 }
